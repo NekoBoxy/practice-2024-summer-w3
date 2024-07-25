@@ -1,0 +1,9 @@
+{
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded", // 不壓縮
+      "extensionName": ".css", //指定編譯後的 CSS 檔案名稱為 .css
+      "savePath": "/css", // 指定轉出路徑
+    },
+  ],
+}
