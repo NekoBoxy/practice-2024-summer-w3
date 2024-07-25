@@ -111,6 +111,7 @@ nav ul li a {
   .header .logo-img {
     height: 250px;
     width: 250px;
+    padding-top: 101px;
   }
   .header .logo-img .txt-m {
     display: none;
@@ -126,7 +127,7 @@ nav ul li a {
     width: 100px;
   }
 }
-main section {
+main > div {
   border: 2px solid black;
   padding: 10px;
 }
@@ -144,12 +145,4 @@ main section {
 footer {
   padding-block: 8px;
   text-align: center;
-}
-
-@media screen and (min-width: 993px) {
-  main {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
 }
