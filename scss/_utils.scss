@@ -1,13 +1,7 @@
 .container {
-  max-width: 992px;
+  max-width: 1000px;
   margin: 0 auto;
-}
-
-
-@media screen and (min-width: 993px) {
-  .container {
-    max-width: 100%;
-  }
+  padding-inline: 15px;
 }
 
 .d-flex {
@@ -16,4 +10,17 @@
 
 .fs-1 {
   font-size: 20px;
+  font-weight: 700;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
 }
