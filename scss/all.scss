@@ -1,0 +1,46 @@
+// layout
+@import "./layout.scss";
+// utils
+@import "./utils.scss";
+
+.header {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-inline: 15px;
+}
+
+.logo-img {
+  height: 150px;
+  width: 150px;
+  background-color: gray;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 51px;
+  margin-bottom: 24px;
+}
+
+nav ul {
+  max-width: 400px;
+  flex-wrap: wrap;
+
+  li {
+    margin-bottom: 10px;
+
+    a {
+      background-color: #3399FF;
+      text-align: center;
+      width: 200px;
+      padding: 10px;
+      color: #fff;
+      font-weight: 700;
+    }
+  }
+}
+
+main.container {
+  border: 1px solid black;
+}
+
+.article {}
