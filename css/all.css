@@ -127,7 +127,7 @@ nav ul li a {
     width: 100px;
   }
 }
-main > div {
+section > div {
   border: 2px solid black;
   padding: 10px;
 }
@@ -142,6 +142,13 @@ main > div {
           align-items: center;
 }
 
+@media screen and (min-width: 993px) {
+  .layout-lg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 footer {
   padding-block: 8px;
   text-align: center;
