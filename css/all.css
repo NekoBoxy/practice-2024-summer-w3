@@ -102,6 +102,10 @@ nav ul li a {
 }
 
 @media screen and (min-width: 993px) {
+  header {
+    padding-top: 20px;
+    padding-inline: 15px;
+  }
   .header {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -163,14 +167,10 @@ footer {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
   }
   .article {
     width: 75%;
     padding: 10px;
-    border: 2px solid black;
     margin-bottom: 0;
   }
   .article .fs-1 {
