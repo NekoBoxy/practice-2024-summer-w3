@@ -3,12 +3,17 @@
 // utils
 @import "./utils.scss";
 
+header {
+  padding-top: 20px;
+  padding-inline: 15px;
+}
+
 .header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 20px;
-  padding-inline: 15px;
+  // padding-top: 20px;
+  // padding-inline: 15px;
 
   .logo-img {
     height: 150px;
@@ -52,6 +57,7 @@ nav ul {
       height: 250px;
       width: 250px;
       padding-top: 101px;
+      margin-bottom: 0;
 
       .txt-m {
         display: none;
@@ -66,8 +72,13 @@ nav ul {
   nav {
     align-self: flex-start;
 
-    ul li a {
-      width: 100px;
+    ul li {
+      font-size: 20px;
+      line-height: 20px;
+
+      a {
+        width: 100px;
+      }
     }
   }
 }
@@ -82,13 +93,48 @@ section>div {
   align-items: center;
 }
 
-@media screen and (min-width: 993px) {
-  .layout-lg {
-    display: flex;
-  }
-}
-
 footer {
   padding-block: 8px;
   text-align: center;
+}
+
+@media screen and (min-width: 993px) {
+  .layout-lg {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  .article {
+    width: calc(9 / 12 * 100%);
+    // width: 703.5px;
+    padding: 10px;
+    border: 2px solid black;
+    margin-bottom: 0;
+
+    .fs-1 {
+      line-height: 24px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .banner {
+    padding: 5px;
+
+    // width: calc(3 / 12 * 100%);
+    .img-box {
+      width: 180px;
+      height: 135px;
+      padding: 0;
+      margin-bottom: 10px;
+    }
+  }
+
+  footer {
+    font-size: 20px;
+    line-height: 1;
+  }
 }

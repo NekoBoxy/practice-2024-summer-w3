@@ -1,5 +1,5 @@
 body {
-  font-family: sans-serif;
+  font-family: "Times New Roman", sans-serif;
   font-size: 16px;
   color: #000000;
   line-height: 1.5;
@@ -56,6 +56,11 @@ a:hover {
   margin-bottom: 24px;
 }
 
+header {
+  padding-top: 20px;
+  padding-inline: 15px;
+}
+
 .header {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -67,8 +72,6 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 20px;
-  padding-inline: 15px;
 }
 .header .logo-img {
   height: 150px;
@@ -112,6 +115,7 @@ nav ul li a {
     height: 250px;
     width: 250px;
     padding-top: 101px;
+    margin-bottom: 0;
   }
   .header .logo-img .txt-m {
     display: none;
@@ -122,6 +126,10 @@ nav ul li a {
   nav {
     -ms-flex-item-align: start;
         align-self: flex-start;
+  }
+  nav ul li {
+    font-size: 20px;
+    line-height: 20px;
   }
   nav ul li a {
     width: 100px;
@@ -142,14 +150,46 @@ section > div {
           align-items: center;
 }
 
+footer {
+  padding-block: 8px;
+  text-align: center;
+}
+
 @media screen and (min-width: 993px) {
   .layout-lg {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
   }
-}
-footer {
-  padding-block: 8px;
-  text-align: center;
+  .article {
+    width: 75%;
+    padding: 10px;
+    border: 2px solid black;
+    margin-bottom: 0;
+  }
+  .article .fs-1 {
+    line-height: 24px;
+  }
+  .article p {
+    font-size: 16px;
+  }
+  .banner {
+    padding: 5px;
+  }
+  .banner .img-box {
+    width: 180px;
+    height: 135px;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  footer {
+    font-size: 20px;
+    line-height: 1;
+  }
 }
