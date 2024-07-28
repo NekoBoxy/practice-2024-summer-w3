@@ -4,91 +4,28 @@
 @import "./utils.scss";
 
 .header {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding-top: 20px;
   padding-inline: 15px;
+  flex-direction: column; // 主軸變更為 Y 軸
+  align-items: center; // 交叉軸(X軸)上的對齊
 
-  .logo-img {
-    height: 150px;
-    width: 150px;
-    background-color: gray;
+  .logo {
+    padding-bottom: 20px;
+  }
+
+  ul {
+    max-width: 400px;
+    flex-wrap: wrap;
     text-align: center;
-    vertical-align: middle;
-    // 手算讓文字垂直置中
-    // (150 - 24 - 24)/2
-    padding-top: 51px;
 
-    .txt-lg {
-      display: none;
+    a {
+      width: 200px;
+      padding: 10px;
+      font-size: 20px;
+      line-height: 1;
+      background-color: #3399FF;
+      color: #ffffff;
+      font-weight: 700;
     }
   }
-}
-
-nav ul {
-  max-width: 400px;
-  flex-wrap: wrap;
-
-  li {
-    margin-bottom: 10px;
-  }
-
-  li a {
-    background-color: #3399FF;
-    text-align: center;
-    width: 200px;
-    padding: 10px;
-    color: #fff;
-  }
-}
-
-@media screen and (min-width: 993px) {
-  .header {
-    flex-direction: row;
-    justify-content: space-between;
-
-    .logo-img {
-      height: 250px;
-      width: 250px;
-      padding-top: 101px;
-
-      .txt-m {
-        display: none;
-      }
-
-      .txt-lg {
-        display: block;
-      }
-    }
-  }
-
-  nav {
-    align-self: flex-start;
-
-    ul li a {
-      width: 100px;
-    }
-  }
-}
-
-section>div {
-  border: 2px solid black;
-  padding: 10px;
-}
-
-.banner {
-  flex-direction: column;
-  align-items: center;
-}
-
-@media screen and (min-width: 993px) {
-  .layout-lg {
-    display: flex;
-  }
-}
-
-footer {
-  padding-block: 8px;
-  text-align: center;
 }
