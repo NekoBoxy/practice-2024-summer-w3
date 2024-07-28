@@ -1,6 +1,6 @@
 // layout
 body {
-  font-family: sans-serif;
+  font-family: "Times New Roman", sans-serif;
   font-size: 16px;
   color: #000000;
   line-height: 1.5;
@@ -10,7 +10,7 @@ body {
 *::after,
 *::before {
   box-sizing: border-box;
-  outline: 1px solid red;
+  outline: 1px solid darken(cornflowerblue, 50%);
 }
 
 img {
