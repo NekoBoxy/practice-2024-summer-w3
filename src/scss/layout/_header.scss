@@ -11,19 +11,25 @@ header {
   }
 
   ul {
-    display: flex;
     flex-wrap: wrap;
+    // 抵銷最左邊和最右邊的 col 多出來的 padding
+    margin-left: -12px;
+    margin-right: -12px;
 
     li {
-      width: 45%;
-      // width: calc(50% - 2px);
+      width: calc(50% - 2px);
       text-align: center;
       border: 1px solid #FFFFFF;
       line-height: 2;
-
+    
+      // 左右側內距，以下兩語法同
       padding-left: 12px;
       padding-right: 12px;
       // padding-inline: 12px;
+
+      @media screen and (min-width: 768px) {
+        width: 25%;
+      }
     }
   }
 }
