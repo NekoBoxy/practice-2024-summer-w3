@@ -13,12 +13,15 @@
 
 body {
   font-family: "Roboto", "Noto Sans TC", serif;
+  font-style: 16px;
+  line-height: 1.5;
 }
 
 img {
   max-width: 100%;
   height: auto; // 建議加上
   vertical-align: middle;
+  object-fit: cover;
 }
 
 // 以下清除預設樣式
@@ -35,4 +38,10 @@ a {
 ul,
 li {
   list-style: none;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
 }

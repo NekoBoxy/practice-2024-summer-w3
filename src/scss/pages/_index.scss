@@ -1,9 +1,63 @@
-.landing-page {
+.landing-area {
   background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true");
+  background-repeat: no-repeat;
+  background-size: cover; // 自適應容器
+  padding-block: 149px;
+  // padding-bottom: 144px;
 
-  // flex-direction: column;
-  text-align: end;
+  .container {
+    padding-inline: 14px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .col {
+    max-width: 100%;
+    text-align: right; // 控容器內文字方向
+  }
+
   p {
     color: $tertiary;
+
+    &:nth-child(1) {
+      font-size: 16px;
+    }
+
+    &:nth-child(2) {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+  }
+
+  button {
+    font-size: 20px;
+    line-height: 2;
+    color: $primary;
+    font-weight: 900;
+    background-color: $theme-color;
+  }
+
+  a {
+    font-size: 20px;
+    line-height: 2;
+    color: $primary;
+    font-weight: 500;
+    padding-inline: 12px;
+    background-color: $theme-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    // 平板
+
+  }
+
+
+
+  @media screen and (min-width: 992px) {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true");
+
   }
 }

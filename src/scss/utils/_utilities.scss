@@ -23,6 +23,16 @@
   }
 }
 
+.row {
+  display: flex;
+}
+
+.d-flex {
+  display: flex;
+}
+
+
+
 // .row {
 //   display: flex;
 //   flex-wrap: wrap;
@@ -41,7 +51,3 @@
 //   line-height: 2;
 
 // }
-
-.d-flex {
-  display: flex;
-}
