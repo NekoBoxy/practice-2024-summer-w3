@@ -61,3 +61,41 @@
 
   }
 }
+
+.about {
+  color: $tertiary;
+  font-size: 24px;
+  line-height: 1.5;
+  background-color: #fbf2f2;
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .col {
+    text-align: center;
+  }
+
+  .col>h2 {
+    padding-top: 40px;
+    padding-bottom: 32px;
+    font-weight: 700;
+  }
+
+  .img-box {
+    width: 80px;
+    margin: 0 auto;
+    padding-bottom: 24px;
+  }
+
+  .col h3 {
+    font-weight: 700;
+    padding-bottom: 8px;
+  }
+
+  .col p {
+    font-size: 16px;
+  }
+}
