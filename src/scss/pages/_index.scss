@@ -68,26 +68,38 @@
   line-height: 1.5;
   background-color: #fbf2f2;
 
+  .container {
+    // step 3:
+    // 因 row 的 負值 margin 會產生 X 軸，
+    // container 需用正 padding 來抵銷掉 X 軸
+    padding: 0 13px;
+  }
+
   .row {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    // step 2: row 用 margin 把內容多推的 padding 抵銷掉
+    margin: 0 -13px;
   }
 
   .col {
     text-align: center;
-  }
-
-  .col>h2 {
-    padding-top: 40px;
-    padding-bottom: 32px;
-    font-weight: 700;
+    margin-bottom: 32px;
+    // padding-bottom: 32px; // 不知為啥無作用
+    // step 1: col 加 padding
+    padding: 0 13px;
   }
 
   .img-box {
     width: 80px;
     margin: 0 auto;
     padding-bottom: 24px;
+  }
+
+  .col h2 {
+    padding-top: 40px;
+    font-weight: 700;
   }
 
   .col h3 {
@@ -97,5 +109,31 @@
 
   .col p {
     font-size: 16px;
+  }
+}
+
+.products {
+
+  .container {
+    // step 3:
+    // 因 row 的 負值 margin 會產生 X 軸，
+    // container 需用正 padding 來抵銷掉 X 軸
+    padding: 0 13px;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // step 2: row 用 margin 把內容多推的 padding 抵銷掉
+    margin: 0 -13px;
+  }
+
+  .col {
+    text-align: center;
+    margin-bottom: 32px;
+    // padding-bottom: 32px; // 不知為啥無作用
+    // step 1: col 加 padding
+    padding: 0 13px;
   }
 }
