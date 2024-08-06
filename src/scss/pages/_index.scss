@@ -54,8 +54,6 @@
 
   }
 
-
-
   @media screen and (min-width: 992px) {
     background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true");
 
@@ -63,7 +61,6 @@
 }
 
 .about {
-  color: $tertiary;
   font-size: 24px;
   line-height: 1.5;
   background-color: #fbf2f2;
@@ -113,6 +110,7 @@
 }
 
 .products {
+  color: $theme-color;
 
   .container {
     // step 3:
@@ -130,10 +128,40 @@
   }
 
   .col {
+    max-width: 100%;
     text-align: center;
-    margin-bottom: 32px;
-    // padding-bottom: 32px; // 不知為啥無作用
+    padding-top: 24px;
     // step 1: col 加 padding
-    padding: 0 13px;
+    padding-inline: 13px;
   }
+
+  .col h2 {
+    font-size: 24px;
+    font-weight: 700;
+    padding-top: 16px;
+  }
+
+  .col h4 {
+    margin-top: 8px;
+    font-size: 48px;
+    font-weight: 900;
+    font-style: italic;
+  }
+}
+
+.co-branding {
+  background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true");
+  background-repeat: no-repeat;
+  background-size: cover; // 自適應容器
+
+  .container {
+    padding-inline: 13px;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
 }
