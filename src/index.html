@@ -130,7 +130,7 @@
             <h4>SUNGLASSES</h4>
           </div>
 
-          <div class="col">
+          <div class="col last-col">
             <div>
               <img
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section3-3.png?raw=true"
@@ -152,11 +152,11 @@
 
           <div class="col">
             <picture>
-              <!-- 當螢幕寬度 <768px 時，替換圖片 -->
+              <!-- 當螢幕寬度 > 768px 時，替換圖片 -->
               <source
                 srcset="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1.png?raw=true"
                 media="(min-width: 768px)">
-              <!-- 預設圖片 -->
+              <!-- 預設 m 版圖片-->
               <img
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1-sm.png?raw=true"
                 alt="DOUBLE A+">
@@ -166,9 +166,16 @@
           </div>
 
           <div class="col">
-            <div>
-              <img src="" alt="">
-            </div>
+            <picture>
+              <!-- 當螢幕寬度 > 768px 時，替換圖片 -->
+              <source
+                srcset="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2.png?raw=true"
+                media="(min-width: 768px)">
+              <!-- 預設 m 版圖片 -->
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2-sm.png?raw=true"
+                alt="DOUBLE A+">
+            </picture>
             <p>YOUTH</p>
           </div>
         </div>

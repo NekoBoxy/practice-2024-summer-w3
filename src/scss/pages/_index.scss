@@ -147,6 +147,10 @@
     font-weight: 900;
     font-style: italic;
   }
+  
+  .last-col {
+    padding-bottom: 24px;
+  }
 }
 
 .co-branding {
@@ -164,4 +168,24 @@
     text-align: center;
   }
 
+  .col {
+    max-width: 100%;
+    padding-top: 24px;
+  }
+
+  .col h2 {
+    color: white;
+    font-size: 24px;
+    line-height: 1.5;
+    padding-top: 16px;
+  }
+
+  .col p {
+    background-color: #fff;
+    font-size: 48px;
+    line-height: 1.5;
+    font-weight: 900;
+    font-style: italic;
+    padding-block: 8px;
+  }
 }
