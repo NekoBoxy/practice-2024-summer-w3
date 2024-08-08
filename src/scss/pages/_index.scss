@@ -189,3 +189,20 @@
     padding-block: 8px;
   }
 }
+
+.customer-recommend {
+  .container {
+    padding-inline: 13px;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .col {
+    max-width: 100%;
+    padding-top: 24px;
+  }
+}
