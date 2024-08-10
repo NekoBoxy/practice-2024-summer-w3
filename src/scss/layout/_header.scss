@@ -1,34 +1,33 @@
-header {
-  background-color: $theme-color;
-}
-
 .header {
+  background-color: $theme-color;
   flex-direction: column;
+
+  .container {
+    padding: 0;
+  }
+
+  .row {
+    margin: 0;
+  }
+
+  .col {
+    padding: 0;
+  }
 
   .logo {
     width: 80px;
-    // padding-block: 12px; // padding 上與下
     padding: 12px 0 12px 15px;
   }
 
   ul {
     flex-wrap: wrap;
-    // 抵銷最左邊和最右邊的 col 多出來的 padding
-    // margin-left: -12px;
-    // margin-right: -12px;
   }
-
 
   li {
     width: calc(50% - 2px);
     text-align: center;
     border: 1px solid #FFFFFF;
     line-height: 3;
-
-    // 左右側內距，以下兩語法同
-    // padding-left: 12px;
-    // padding-right: 12px;
-    // padding-inline: 12px;
   }
 
   @media screen and (min-width: 768px) {

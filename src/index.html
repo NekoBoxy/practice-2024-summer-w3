@@ -11,31 +11,35 @@
 </head>
 
 <body>
-  <header>
-    <div class="container d-flex header">
-      <div class="logo">
-        <a href="/">
-          <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true"
-            alt="">
-        </a>
-      </div>
+  <header class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="logo">
+            <a href="/">
+              <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true"
+                alt="">
+            </a>
+          </div>
+        </div>
 
-      <nav>
-        <ul class="d-flex">
-          <li>
-            <a href="https://">系列鏡框</a>
-          </li>
-          <li>
-            <a href="https://">門市據點</a>
-          </li>
-          <li>
-            <a href="https://">部落格</a>
-          </li>
-          <li>
-            <a href="https://">常見問題</a>
-          </li>
-        </ul>
-      </nav>
+        <nav class="col">
+          <ul class="d-flex">
+            <li>
+              <a href="https://">系列鏡框</a>
+            </li>
+            <li>
+              <a href="https://">門市據點</a>
+            </li>
+            <li>
+              <a href="https://">部落格</a>
+            </li>
+            <li>
+              <a href="https://">常見問題</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
 
   </header>
@@ -58,11 +62,11 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <h2>用專業的心，做專業的事</h2>
+            <h2 class="section-title">用專業的心，做專業的事</h2>
           </div>
 
           <div class="col">
-            <div class="img-box">
+            <div class="img-box pt-8">
               <img
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section2-1.png?raw=true"
                 alt="">
@@ -72,7 +76,7 @@
           </div>
 
           <div class="col">
-            <div class="img-box">
+            <div class="img-box pt-8">
               <img
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section2-2.png?raw=true"
                 alt="">
@@ -82,7 +86,7 @@
           </div>
 
           <div class="col">
-            <div class="img-box">
+            <div class="img-box pt-8">
               <img
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section2-3.png?raw=true"
                 alt="">
@@ -92,13 +96,13 @@
           </div>
 
           <div class="col">
-            <div class="img-box">
+            <div class="img-box pt-8">
               <img
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-sectioin2-4.png?raw=true"
                 alt="">
             </div>
             <h3>關於鏡片</h3>
-            <p>使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。</p>
+            <p class="pb-40">使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。</p>
           </div>
 
         </div>
@@ -109,7 +113,7 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <h2>經典系列鏡框</h2>
+            <h2 class="section-title">經典系列鏡框</h2>
           </div>
 
           <div class="col">
@@ -118,7 +122,7 @@
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section3-1.png?raw=true"
                 alt="">
             </div>
-            <h4>OPTICAL</h4>
+            <h3 class="sub-title">OPTICAL</h3>
           </div>
 
           <div class="col">
@@ -127,7 +131,7 @@
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section3-2.png?raw=true"
                 alt="">
             </div>
-            <h4>SUNGLASSES</h4>
+            <h3 class="sub-title">SUNGLASSES</h3>
           </div>
 
           <div class="col last-col">
@@ -136,7 +140,7 @@
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section3-3.png?raw=true"
                 alt="">
             </div>
-            <h4>FUNCTIONAL</h4>
+            <h3 class="sub-title">FUNCTIONAL</h3>
           </div>
         </div>
       </div>
@@ -147,7 +151,7 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <h2>聯名設計鏡框</h2>
+            <h2 class="section-title">聯名設計鏡框</h2>
           </div>
 
           <div class="col">
@@ -165,7 +169,7 @@
             <p>DOUBLE A+</p>
           </div>
 
-          <div class="col">
+          <div class="col last-col">
             <picture>
               <!-- 當螢幕寬度 > 768px 時，替換圖片 -->
               <source
@@ -186,12 +190,14 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <h2 class="title">顧客推薦</h2>
+            <h2 class="section-title">顧客推薦</h2>
           </div>
 
           <div class="col customer-card">
             <div class="img-box">
-              <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section5-1.png?raw=true" alt="">
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section5-1.png?raw=true"
+                alt="">
             </div>
             <div class="content">
               <span class="name">Jessy</span>
@@ -202,7 +208,9 @@
 
           <div class="col customer-card">
             <div class="img-box">
-              <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section5-3.png?raw=true" alt="">
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section5-3.png?raw=true"
+                alt="">
             </div>
             <div class="content">
               <span class="name">凱倫</span>
@@ -213,7 +221,9 @@
 
           <div class="col customer-card">
             <div class="img-box">
-              <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section5-2.png?raw=true" alt="">
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section5-2.png?raw=true"
+                alt="">
             </div>
             <div class="content">
               <span class="name">悠悠</span>
@@ -224,7 +234,9 @@
 
           <div class="col customer-card">
             <div class="img-box">
-              <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section5-4.png?raw=true" alt="">
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section5-4.png?raw=true"
+                alt="">
             </div>
             <div class="content">
               <span class="name">Kyuan</span>

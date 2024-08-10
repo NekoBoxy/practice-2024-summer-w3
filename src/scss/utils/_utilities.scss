@@ -1,3 +1,8 @@
+.d-flex {
+  display: flex;
+}
+
+// 共用的基本樣式
 // 容器設定
 .container {
   // mobile first：手機板設定
@@ -5,6 +10,17 @@
   // 372+24 = 396
   max-width: 100%;
   margin: 0 auto;
+  // step 3:
+  // 因 row 的 負值 margin 會產生 X 軸，
+  // container 需用正 padding 來抵銷掉 X 軸
+  // 下列三種設定法皆相同，擇一即可
+  // 法 1
+  // padding-inline: 13px;
+  // 法 2
+  padding: 0 13px;
+  // 法 3
+  // padding-left: 13px;
+  // padding-right: 13px;
 
   @media screen and (min-width: 768px) {
     // 平板
@@ -25,37 +41,58 @@
 
 .row {
   display: flex;
+  justify-content: center;
+  flex-direction: column;
+  // step 2: row 用 margin 把內容多推的 padding 抵銷掉
+  margin: 0 -13px;
+
 }
 
-.d-flex {
-  display: flex;
+.col {
+  max-width: 100%;
+  text-align: center;
+  // step 1: col 加 padding
+  padding: 0 13px;
 }
 
-// .p-sm {
-//   padding: 0 13px;
+// h2
+.col .section-title {
+  padding-top: 40px;
+  padding-bottom: 24px;
+  font-weight: 700;
+  font-size: 24px;
+}
 
-//   @media screen and (min-width: 768px) {
-//     padding: 0;
-//   }
+.col .sub-title {
+  padding-top: 8px;
+  padding-bottom: 24px;
+  font-size: 48px;
+  font-weight: 900;
+  font-style: italic;
+}
 
+.col p {
+  padding-bottom: 24px;
+}
+
+.pt-8 {
+  padding-top: 8px;
+}
+
+.col .pb-40 {
+  padding-bottom: 40px;
+}
+
+.col .mb40 {
+  margin-bottom: 40px;
+}
+
+.col.last-col {
+  padding-bottom: 16px;
+}
+
+// .pb-24 {
+//   padding-bottom: 24px;
 // }
 
-
-// .row {
-//   display: flex;
-//   flex-wrap: wrap;
-//   /* 抵銷最左邊和最右邊的 col 多出來的 padding */
-//   margin-left: -12px;
-//   margin-right: -12px;
-//   // margin-inline: -12px;
-// }
-
-// .col-6 {
-//   width: 50%;
-//   // width: calc(50% - 2px);
-//   padding-inline: 12px;
-//   text-align: center;
-//   border: 1px solid #FFFFFF;
-//   line-height: 2;
-
-// }
+.card {}

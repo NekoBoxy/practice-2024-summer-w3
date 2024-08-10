@@ -5,16 +5,7 @@
   padding-block: 149px;
   // padding-bottom: 144px;
 
-  .container {
-    padding-inline: 14px;
-  }
-
-  .row {
-    flex-direction: column;
-  }
-
   .col {
-    max-width: 100%;
     text-align: right; // 控容器內文字方向
   }
 
@@ -63,40 +54,38 @@
 .about {
   font-size: 24px;
   line-height: 1.5;
-  background-color: #fbf2f2;
+  background-color: $primary;
 
-  .container {
-    // step 3:
-    // 因 row 的 負值 margin 會產生 X 軸，
-    // container 需用正 padding 來抵銷掉 X 軸
-    padding: 0 13px;
-  }
+  // .container {
+  //   // step 3:
+  //   // 因 row 的 負值 margin 會產生 X 軸，
+  //   // container 需用正 padding 來抵銷掉 X 軸
+  //   // padding: 0 13px;
+  // }
 
-  .row {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    // step 2: row 用 margin 把內容多推的 padding 抵銷掉
-    margin: 0 -13px;
-  }
+  // .row {
+  //   // display: flex;
+  //   // flex-direction: column;
+  //   justify-content: center;
+  //   // step 2: row 用 margin 把內容多推的 padding 抵銷掉
+  //   margin: 0 -13px;
+  // }
 
-  .col {
-    text-align: center;
-    margin-bottom: 32px;
-    // padding-bottom: 32px; // 不知為啥無作用
-    // step 1: col 加 padding
-    padding: 0 13px;
-  }
+  // .col {
+  //   // text-align: center;
+
+  //   // margin-bottom: 32px;
+  //   // padding-bottom: 32px; // 不知為啥無作用
+
+  //   // step 1: col 加 padding
+  //   padding: 0 13px;
+  // }
 
   .img-box {
-    width: 80px;
+    width: 83px;
+    aspect-ratio: 1 / 1;
     margin: 0 auto;
     padding-bottom: 24px;
-  }
-
-  .col h2 {
-    padding-top: 40px;
-    font-weight: 700;
   }
 
   .col h3 {
@@ -112,45 +101,45 @@
 .products {
   color: $theme-color;
 
-  .container {
-    // step 3:
-    // 因 row 的 負值 margin 會產生 X 軸，
-    // container 需用正 padding 來抵銷掉 X 軸
-    padding: 0 13px;
-  }
+  // .container {
+  //   // step 3:
+  //   // 因 row 的 負值 margin 會產生 X 軸，
+  //   // container 需用正 padding 來抵銷掉 X 軸
+  //   // padding: 0 13px;
+  // }
 
-  .row {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    // step 2: row 用 margin 把內容多推的 padding 抵銷掉
-    margin: 0 -13px;
-  }
+  // .row {
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   // step 2: row 用 margin 把內容多推的 padding 抵銷掉
+  //   margin: 0 -13px;
+  // }
 
-  .col {
-    max-width: 100%;
-    text-align: center;
-    padding-top: 24px;
-    // step 1: col 加 padding
-    padding-inline: 13px;
-  }
+  // .col {
+  //   max-width: 100%;
+  //   // text-align: center;
+  //   // padding-top: 24px;
+  //   // step 1: col 加 padding
+  //   // padding-inline: 13px;
+  // }
 
-  .col h2 {
-    font-size: 24px;
-    font-weight: 700;
-    padding-top: 16px;
-  }
+  // .col h2 {
+  //   // font-size: 24px;
+  //   // font-weight: 700;
+  //   padding-top: 16px;
+  // }
 
-  .col h4 {
-    margin-top: 8px;
-    font-size: 48px;
-    font-weight: 900;
-    font-style: italic;
-  }
-  
-  .last-col {
-    padding-bottom: 24px;
-  }
+  // .col h4 {
+  //   margin-top: 8px;
+  //   font-size: 48px;
+  //   font-weight: 900;
+  //   font-style: italic;
+  // }
+
+  // .last-col {
+  //   padding-bottom: 16px;
+  // }
 }
 
 .co-branding {
@@ -162,16 +151,12 @@
     padding-inline: 13px;
   }
 
-  .row {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
+  // .row {
+  //   display: flex;
+  //   flex-direction: column;
+  //   text-align: center;
+  // }
 
-  .col {
-    max-width: 100%;
-    padding-top: 24px;
-  }
 
   .col h2 {
     color: white;
@@ -181,13 +166,16 @@
   }
 
   .col p {
+    color: $theme-color;
     background-color: #fff;
     font-size: 48px;
     line-height: 1.5;
     font-weight: 900;
     font-style: italic;
     padding-block: 8px;
+    margin-bottom: 24px;
   }
+
 }
 
 .customer-recommend {
@@ -199,10 +187,9 @@
     display: flex;
     flex-direction: column;
   }
-  
+
   .col {
     max-width: 100%;
-    padding-top: 24px;
   }
 
   .title {
