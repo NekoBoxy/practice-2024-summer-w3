@@ -47,7 +47,6 @@
 
   @media screen and (min-width: 992px) {
     background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true");
-
   }
 }
 
@@ -55,31 +54,6 @@
   font-size: 24px;
   line-height: 1.5;
   background-color: $primary;
-
-  // .container {
-  //   // step 3:
-  //   // 因 row 的 負值 margin 會產生 X 軸，
-  //   // container 需用正 padding 來抵銷掉 X 軸
-  //   // padding: 0 13px;
-  // }
-
-  // .row {
-  //   // display: flex;
-  //   // flex-direction: column;
-  //   justify-content: center;
-  //   // step 2: row 用 margin 把內容多推的 padding 抵銷掉
-  //   margin: 0 -13px;
-  // }
-
-  // .col {
-  //   // text-align: center;
-
-  //   // margin-bottom: 32px;
-  //   // padding-bottom: 32px; // 不知為啥無作用
-
-  //   // step 1: col 加 padding
-  //   padding: 0 13px;
-  // }
 
   .img-box {
     width: 83px;
@@ -101,45 +75,9 @@
 .products {
   color: $theme-color;
 
-  // .container {
-  //   // step 3:
-  //   // 因 row 的 負值 margin 會產生 X 軸，
-  //   // container 需用正 padding 來抵銷掉 X 軸
-  //   // padding: 0 13px;
-  // }
-
-  // .row {
-  //   display: flex;
-  //   flex-direction: column;
-  //   justify-content: center;
-  //   // step 2: row 用 margin 把內容多推的 padding 抵銷掉
-  //   margin: 0 -13px;
-  // }
-
-  // .col {
-  //   max-width: 100%;
-  //   // text-align: center;
-  //   // padding-top: 24px;
-  //   // step 1: col 加 padding
-  //   // padding-inline: 13px;
-  // }
-
-  // .col h2 {
-  //   // font-size: 24px;
-  //   // font-weight: 700;
-  //   padding-top: 16px;
-  // }
-
-  // .col h4 {
-  //   margin-top: 8px;
-  //   font-size: 48px;
-  //   font-weight: 900;
-  //   font-style: italic;
-  // }
-
-  // .last-col {
-  //   padding-bottom: 16px;
-  // }
+  .section-title {
+    color: $tertiary;
+  }
 }
 
 .co-branding {
@@ -151,18 +89,8 @@
     padding-inline: 13px;
   }
 
-  // .row {
-  //   display: flex;
-  //   flex-direction: column;
-  //   text-align: center;
-  // }
-
-
-  .col h2 {
+  .col .section-title {
     color: white;
-    font-size: 24px;
-    line-height: 1.5;
-    padding-top: 16px;
   }
 
   .col p {
@@ -179,45 +107,40 @@
 }
 
 .customer-recommend {
-  .container {
-    padding-inline: 13px;
-  }
-
-  .row {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .col {
-    max-width: 100%;
-  }
-
-  .title {
-    font-size: 24px;
-    text-align: center;
-    font-weight: 700;
-  }
-
   .customer-card {
-    border: 1px solid grey;
-    // box-shadow: ;
+    width: 100%;
+    box-shadow: 0px 2px 6px #00000029;
+    border-radius: 4px;
+    // 推出每張卡間的垂直間距
+    margin-bottom: 16px;
+  }
+
+  .img-box {
+    // max-width: 348px;
+    width: 100%;
+    aspect-ratio: 348 / 306;
+    margin: 0 auto;
   }
 
   .content {
     display: flex;
     flex-direction: column;
+    text-align: start;
     color: #000;
+    padding: 16px;
   }
 
   .name {
     font-weight: 500;
-    margin-top: 16px;
     margin-bottom: 8px;
   }
 
   .date {
+    // 推出上方空間
     margin-top: auto;
     font-size: 14px;
     color: #707070;
+    // 把 utili 設的值清空，用 .content 處理文字區塊的間距
+    padding: 0;
   }
 }
