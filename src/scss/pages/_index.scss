@@ -116,7 +116,6 @@
   }
 
   .img-box {
-    // max-width: 348px;
     width: 100%;
     aspect-ratio: 348 / 306;
     margin: 0 auto;
@@ -142,5 +141,22 @@
     color: #707070;
     // 把 utili 設的值清空，用 .content 處理文字區塊的間距
     padding: 0;
+  }
+}
+
+.contact {
+  .col {
+    // 外層不應統控 text-align: center；待修正
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+  }
+
+  p, label, input, textarea {
+    color: #000000;
+  }
+
+  input {
+    border: 1px solid black;
   }
 }
