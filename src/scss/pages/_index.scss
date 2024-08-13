@@ -145,6 +145,8 @@
 }
 
 .contact {
+  background-color: $primary;
+
   .col {
     // 外層不應統控 text-align: center；待修正
     text-align: start;
@@ -152,11 +154,33 @@
     flex-direction: column;
   }
 
+  .section-title, .content {
+    text-align: center;
+  }
+
   p, label, input, textarea {
     color: #000000;
   }
 
-  input {
+  input, textarea {
     border: 1px solid black;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 6px 0 6px 12px;
+    width: calc(100% - 2px);
   }
+
+  .agree-box {
+    align-items: flex-start;
+    margin-bottom: 24px;
+  }
+
+  button {
+    padding-block: 16px;
+    background-color: $theme-color;
+    font-size: 16px;
+    line-height: 1.5;
+    color: white;
+  }
+
 }
