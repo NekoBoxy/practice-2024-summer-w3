@@ -162,18 +162,45 @@
     color: #000000;
   }
 
+  label {
+    font-size: 16px;
+    line-height: 1.5;
+    display: block;
+  }
+
+  ::placeholder {
+    color: #cacaca;
+  }
+
   input, textarea {
     border: 1px solid black;
     font-size: 16px;
     line-height: 1.5;
     padding: 6px 0 6px 12px;
-    width: calc(100% - 2px);
+    width: calc(100% - 15px);
   }
 
   .agree-box {
-    align-items: flex-start;
-    margin-bottom: 24px;
+    display: flex;
+    margin: 0;
+
+    input {
+      width: auto;
+      margin-right: 4px;
+    }
+
+    // label {
+
+    // }
   }
+
+  // .agree {
+  //   width: auto;
+  // }
+
+  // .label-agree {
+  //   display: inline-block;
+  // }
 
   button {
     padding-block: 16px;
