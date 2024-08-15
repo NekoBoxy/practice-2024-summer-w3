@@ -182,25 +182,18 @@
 
   .agree-box {
     display: flex;
-    margin: 0;
 
     input {
       width: auto;
       margin-right: 4px;
     }
-
-    // label {
-
-    // }
   }
 
-  // .agree {
-  //   width: auto;
-  // }
 
-  // .label-agree {
-  //   display: inline-block;
-  // }
+  // 這區計算應該有問題，為啥是扣單側不是扣雙側 padding 值
+  .submit {
+    width: calc(100% - 13px);
+  }
 
   button {
     padding-block: 16px;
