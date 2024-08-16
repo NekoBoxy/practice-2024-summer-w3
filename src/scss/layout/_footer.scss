@@ -1,4 +1,38 @@
 .footer {
   background-color: $theme-color;
   color: white;
+
+  .top-group {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .social-medias {
+    display: flex;
+  }
+
+  .icon-group {
+    text-align: start;
+  }
+
+  .icon-box, .icon-group.span {
+    width: 24px;
+    height: 24px;
+  }
+
+  .material-symbols-outlined {
+    font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+  }
+
+  .material-symbols-outlined {
+    font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+  }
 }
