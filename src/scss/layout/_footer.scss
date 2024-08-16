@@ -9,6 +9,31 @@
     padding-bottom: 20px;
     border-bottom: 1px solid white;
     margin-bottom: 20px;
+
+    @media screen and (min-width: 992px) {
+      margin-top: 60px;
+      // align-items: center;
+    }
+  }
+
+  .content {
+    @media screen and (min-width: 992px) {
+      width: 100%;
+
+    }
+  }
+
+  ul {
+    display: none;
+
+    @media screen and (min-width: 992px) {
+      display: flex;
+      margin-bottom: 36px;
+
+      li {
+        padding-block: 12px;
+      }
+    }
   }
 
   .icon-group {
@@ -24,6 +49,11 @@
   .icon-group.span {
     width: 24px;
     height: 24px;
+
+    @media screen and (min-width: 992px) {
+      width: 48px;
+      height: 48px;
+    }
   }
 
   .material-symbols-outlined {
@@ -44,6 +74,31 @@
 
   .social-medias {
     display: flex;
+  }
+
+  .d-pc-none {
+    @media screen and (min-width: 992px) {
+      display: none;
+    }
+  }
+
+  .d-mobile-none {
+    display: none;
+
+    @media screen and (min-width: 992px) {
+      display: flex;
+    }
+  }
+
+  .pc-nav {
+    @media screen and (min-width: 992px) {
+      display: flex;
+      justify-content: space-between;
+
+      .social-medias .icon-box {
+        margin-right: 32px;
+      }
+    }
   }
 
   .declaration {
