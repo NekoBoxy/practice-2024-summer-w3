@@ -5,17 +5,23 @@
   .top-group {
     display: flex;
     justify-content: space-between;
-  }
-
-  .social-medias {
-    display: flex;
+    margin-top: 24px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+    margin-bottom: 20px;
   }
 
   .icon-group {
     text-align: start;
   }
 
-  .icon-box, .icon-group.span {
+  .icon-group>.material-symbols-outlined {
+    vertical-align: text-bottom;
+    margin-right: 5px;
+  }
+
+  .icon-box,
+  .icon-group.span {
     width: 24px;
     height: 24px;
   }
@@ -34,5 +40,18 @@
       'wght' 400,
       'GRAD' 0,
       'opsz' 24
+  }
+
+  .social-medias {
+    display: flex;
+  }
+
+  .declaration {
+    text-align: start;
+  }
+
+
+  .declaration p {
+    padding-bottom: 8px;
   }
 }
