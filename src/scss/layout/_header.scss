@@ -1,6 +1,5 @@
 .header {
   background-color: $theme-color;
-  flex-direction: column;
 
   .container {
     padding: 0;
@@ -34,12 +33,27 @@
     flex-direction: row;
     justify-content: space-between; // 待修改
 
+    .row {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .col {
+      width: 50%;
+
+      &:nth-child(1) .logo {
+        margin-right: auto; // 右側推到極限
+      }
+    }
+
     ul {
       flex-wrap: nowrap;
     }
 
     li {
-      width: 25%;
+      padding-left: 64px;
+      border: none;
     }
   }
 }

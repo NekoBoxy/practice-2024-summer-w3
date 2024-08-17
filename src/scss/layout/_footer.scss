@@ -38,14 +38,12 @@
     text-align: start;
   }
 
-  .icon-group>.material-symbols-outlined {
+  .icon-group>.material-icons-outlined {
     vertical-align: text-bottom;
     margin-right: 5px;
 
     @media screen and (min-width: 992px) {
       margin-right: 22px;
-
-
     }
   }
 
@@ -65,23 +63,23 @@
     }
   }
 
-  // 控 material icon 用 font-size 就可
-  .material-symbols-outlined {
-    font-size: 24px;
-    vertical-align: middle;
+  // // 控 material icon 用 font-size 就可
+  // .material-symbols-outlined {
+  //   font-size: 24px;
+  //   vertical-align: middle;
 
-    @media screen and (min-width: 992px) {
-      font-size: 36px;
-      vertical-align: bottom;
-    }
+  //   @media screen and (min-width: 992px) {
+  //     font-size: 36px;
+  //     vertical-align: bottom;
+  //   }
 
-    // 細部設定
-    // font-variation-settings:
-    //   'FILL' 0,
-    //   'wght' 400,
-    //   'GRAD' 0,
-    //   'opsz' 24;
-  }
+  //   // 細部設定
+  //   // font-variation-settings:
+  //   //   'FILL' 0,
+  //   //   'wght' 400,
+  //   //   'GRAD' 0,
+  //   //   'opsz' 24;
+  // }
 
   .social-medias {
     display: flex;
