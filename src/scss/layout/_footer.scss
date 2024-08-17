@@ -41,6 +41,12 @@
   .icon-group>.material-symbols-outlined {
     vertical-align: text-bottom;
     margin-right: 5px;
+
+    @media screen and (min-width: 992px) {
+      margin-right: 22px;
+
+
+    }
   }
 
   .icon-box {
@@ -118,5 +124,21 @@
 
   .declaration p {
     padding-bottom: 8px;
+  }
+
+  @media screen and (min-width: 992px) {
+    .declaration {
+      display: flex;
+      justify-content: space-between;
+      margin-block: 32px;
+
+      .pc-box {
+        display: flex;
+
+        p:nth-child(1) {
+          margin-right: 48px;
+        }
+      }
+    }
   }
 }
