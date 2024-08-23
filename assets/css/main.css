@@ -79,7 +79,6 @@ a {
   text-decoration: none;
   color: #FBF2F2;
   display: inline-block;
-  width: 100%;
 }
 a:hover {
   -webkit-filter: brightness(50%);
