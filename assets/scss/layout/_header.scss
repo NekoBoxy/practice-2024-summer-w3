@@ -30,8 +30,6 @@
   }
 
   @media screen and (min-width: 768px) {
-    flex-direction: row;
-    justify-content: space-between; // 待修改
 
     .row {
       flex-direction: row;
@@ -55,6 +53,23 @@
       padding-left: 64px;
       border: none;
       width: auto;
+    }
+  }
+
+
+
+  @media screen and (min-width: 992px) {
+    .col-md-1 {
+      width: 80%;
+    }
+
+    .col-md-2 {
+      width: calc(100% - 80px);
+      text-align: end;
+
+      ul {
+        justify-content: flex-end;
+      }
     }
   }
 }

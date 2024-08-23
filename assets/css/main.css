@@ -109,7 +109,7 @@ button {
 }
 @media screen and (min-width: 992px) {
   .container {
-    max-width: 1920px;
+    max-width: 1296px;
   }
 }
 
@@ -223,15 +223,6 @@ button {
   line-height: 3;
 }
 @media screen and (min-width: 768px) {
-  .header {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
   .header .row {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -259,10 +250,27 @@ button {
     width: auto;
   }
 }
+@media screen and (min-width: 992px) {
+  .header .col-md-1 {
+    width: 80%;
+  }
+  .header .col-md-2 {
+    width: calc(100% - 80px);
+    text-align: end;
+  }
+  .header .col-md-2 ul {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
 
 .footer {
   background-color: #AA0601;
   color: white;
+}
+.footer .container {
+  max-width: 1296px;
 }
 .footer .col {
   padding: 0 16px;
@@ -284,12 +292,12 @@ button {
   border-bottom: 1px solid white;
   margin-bottom: 20px;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .footer .top-group {
     margin-top: 60px;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .footer .content {
     width: 100%;
   }
@@ -297,7 +305,7 @@ button {
 .footer ul {
   display: none;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .footer ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -315,7 +323,7 @@ button {
   vertical-align: text-bottom;
   margin-right: 5px;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .footer .icon-group > .material-icons-outlined {
     margin-right: 22px;
   }
@@ -324,13 +332,13 @@ button {
   width: 24px;
   height: 24px;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .footer .icon-box {
     width: 48px;
     height: 48px;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .footer .icon-group span {
     font-size: 36px;
   }
@@ -340,7 +348,7 @@ button {
   display: -ms-flexbox;
   display: flex;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .footer .d-pc-none {
     display: none;
   }
@@ -348,7 +356,7 @@ button {
 .footer .d-mobile-none {
   display: none;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .footer .d-mobile-none {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -377,7 +385,7 @@ button {
 .footer .declaration p {
   padding-bottom: 8px;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .footer .declaration {
     display: -webkit-box;
     display: -ms-flexbox;

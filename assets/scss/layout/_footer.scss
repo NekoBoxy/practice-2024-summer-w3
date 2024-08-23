@@ -2,6 +2,10 @@
   background-color: $theme-color;
   color: white;
 
+  .container {
+    max-width: 1296px;
+  }
+
   .col {
     padding: 0 16px;
 
@@ -18,13 +22,13 @@
     border-bottom: 1px solid white;
     margin-bottom: 20px;
 
-    @media screen and (min-width: 992px) {
+    @media screen and (min-width: 768px) {
       margin-top: 60px;
     }
   }
 
   .content {
-    @media screen and (min-width: 992px) {
+    @media screen and (min-width: 768px) {
       width: 100%;
     }
   }
@@ -32,7 +36,7 @@
   ul {
     display: none;
 
-    @media screen and (min-width: 992px) {
+    @media screen and (min-width: 768px) {
       display: flex;
       margin-bottom: 36px;
 
@@ -50,7 +54,7 @@
     vertical-align: text-bottom;
     margin-right: 5px;
 
-    @media screen and (min-width: 992px) {
+    @media screen and (min-width: 768px) {
       margin-right: 22px;
     }
   }
@@ -59,14 +63,14 @@
     width: 24px;
     height: 24px;
 
-    @media screen and (min-width: 992px) {
+    @media screen and (min-width: 768px) {
       width: 48px;
       height: 48px;
     }
   }
 
   .icon-group span {
-    @media screen and (min-width: 992px) {
+    @media screen and (min-width: 768px) {
       font-size: 36px;
     }
   }
@@ -76,7 +80,7 @@
   //   font-size: 24px;
   //   vertical-align: middle;
 
-  //   @media screen and (min-width: 992px) {
+  //   @media screen and (min-width: 768px) {
   //     font-size: 36px;
   //     vertical-align: bottom;
   //   }
@@ -94,7 +98,7 @@
   }
 
   .d-pc-none {
-    @media screen and (min-width: 992px) {
+    @media screen and (min-width: 768px) {
       display: none;
     }
   }
@@ -102,7 +106,7 @@
   .d-mobile-none {
     display: none;
 
-    @media screen and (min-width: 992px) {
+    @media screen and (min-width: 768px) {
       display: flex;
     }
   }
@@ -127,12 +131,11 @@
     text-align: start;
   }
 
-
   .declaration p {
     padding-bottom: 8px;
   }
 
-  @media screen and (min-width: 992px) {
+  @media screen and (min-width: 768px) {
     .declaration {
       display: flex;
       justify-content: space-between;
