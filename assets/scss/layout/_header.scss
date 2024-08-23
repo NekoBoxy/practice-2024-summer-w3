@@ -40,7 +40,7 @@
     }
 
     .col {
-      width: 50%;
+      width: auto;
 
       &:nth-child(1) .logo {
         margin-right: auto; // 右側推到極限
@@ -54,6 +54,7 @@
     li {
       padding-left: 64px;
       border: none;
+      width: auto;
     }
   }
 }

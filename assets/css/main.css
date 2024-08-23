@@ -107,14 +107,9 @@ button {
   margin: 0 auto;
   padding: 0 13px;
 }
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-}
 @media screen and (min-width: 992px) {
   .container {
-    max-width: 1320px;
+    max-width: 1920px;
   }
 }
 
@@ -249,7 +244,7 @@ button {
             align-items: center;
   }
   .header .col {
-    width: 50%;
+    width: auto;
   }
   .header .col:nth-child(1) .logo {
     margin-right: auto;
@@ -261,6 +256,7 @@ button {
   .header li {
     padding-left: 64px;
     border: none;
+    width: auto;
   }
 }
 
