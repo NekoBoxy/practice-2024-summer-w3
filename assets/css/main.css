@@ -79,6 +79,7 @@ a {
   text-decoration: none;
   color: #FBF2F2;
   display: inline-block;
+  width: 100%;
 }
 a:hover {
   -webkit-filter: brightness(50%);
@@ -264,6 +265,14 @@ button {
   background-color: #AA0601;
   color: white;
 }
+.footer .col {
+  padding: 0 16px;
+}
+@media screen and (min-width: 576px) {
+  .footer .col {
+    padding: 0 36px;
+  }
+}
 .footer .top-group {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -347,7 +356,7 @@ button {
     display: flex;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .footer .pc-nav {
     display: -webkit-box;
     display: -ms-flexbox;

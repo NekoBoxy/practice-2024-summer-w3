@@ -2,6 +2,14 @@
   background-color: $theme-color;
   color: white;
 
+  .col {
+    padding: 0 16px;
+
+    @media screen and (min-width: 576px) {
+      padding: 0 36px;
+    }
+  }
+
   .top-group {
     display: flex;
     justify-content: space-between;
@@ -63,7 +71,7 @@
     }
   }
 
-  // // 控 material icon 用 font-size 就可
+  // 控 material icon 用 font-size 就可
   // .material-symbols-outlined {
   //   font-size: 24px;
   //   vertical-align: middle;
@@ -100,7 +108,7 @@
   }
 
   .pc-nav {
-    @media screen and (min-width: 992px) {
+    @media screen and (min-width: 768px) {
       display: flex;
       justify-content: space-between;
 
