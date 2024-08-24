@@ -109,7 +109,7 @@ button {
 }
 @media screen and (min-width: 992px) {
   .container {
-    max-width: 1296px;
+    max-width: 1320px;
   }
 }
 
@@ -233,12 +233,14 @@ button {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding-left: 36px;
+    padding-right: 36px;
   }
-  .header .col {
-    width: auto;
-  }
-  .header .col:nth-child(1) .logo {
+  .header .col-md-1 {
     margin-right: auto;
+  }
+  .header .logo {
+    padding-left: 0;
   }
   .header ul {
     -ms-flex-wrap: nowrap;
@@ -251,14 +253,14 @@ button {
   }
 }
 @media screen and (min-width: 992px) {
-  .header .col-md-1 {
-    width: 80%;
+  .header .row {
+    padding-left: 0;
+    padding-right: 0;
   }
-  .header .col-md-2 {
-    width: calc(100% - 80px);
+  .header .col-lg-2 {
     text-align: end;
   }
-  .header .col-md-2 ul {
+  .header .col-lg-2 ul {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
@@ -268,9 +270,6 @@ button {
 .footer {
   background-color: #AA0601;
   color: white;
-}
-.footer .container {
-  max-width: 1296px;
 }
 .footer .col {
   padding: 0 16px;
@@ -331,6 +330,7 @@ button {
 .footer .icon-box {
   width: 24px;
   height: 24px;
+  padding-left: 16px;
 }
 @media screen and (min-width: 768px) {
   .footer .icon-box {

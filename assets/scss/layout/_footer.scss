@@ -2,10 +2,6 @@
   background-color: $theme-color;
   color: white;
 
-  .container {
-    max-width: 1296px;
-  }
-
   .col {
     padding: 0 16px;
 
@@ -62,6 +58,7 @@
   .icon-box {
     width: 24px;
     height: 24px;
+    padding-left: 16px;
 
     @media screen and (min-width: 768px) {
       width: 48px;

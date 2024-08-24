@@ -35,14 +35,17 @@
       flex-direction: row;
       justify-content: space-around;
       align-items: center;
+      padding-left: 36px;
+      padding-right: 36px;
     }
 
-    .col {
-      width: auto;
+    .col-md-1 {
+      // 往右推至極限
+      margin-right: auto;
+    }
 
-      &:nth-child(1) .logo {
-        margin-right: auto; // 右側推到極限
-      }
+    .logo {
+      padding-left: 0;
     }
 
     ul {
@@ -56,15 +59,13 @@
     }
   }
 
-
-
   @media screen and (min-width: 992px) {
-    .col-md-1 {
-      width: 80%;
+    .row {
+      padding-left: 0;
+      padding-right: 0;
     }
 
-    .col-md-2 {
-      width: calc(100% - 80px);
+    .col-lg-2 {
       text-align: end;
 
       ul {
