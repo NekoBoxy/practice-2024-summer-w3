@@ -315,6 +315,38 @@ button {
     padding-block: 12px;
   }
 }
+@media screen and (min-width: 768px) {
+  .footer .pc-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer .pc-nav li {
+    padding-right: 48px;
+  }
+  .footer .pc-nav .social-medias .icon-box {
+    margin-right: 16px;
+  }
+  .footer .pc-nav .social-medias .icon-box:last-child {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  .footer .pc-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer .pc-nav .social-medias .icon-box {
+    margin-right: 32px;
+  }
+}
 .footer .icon-group {
   text-align: start;
 }
@@ -331,6 +363,12 @@ button {
   width: 24px;
   height: 24px;
   padding-left: 16px;
+}
+@media screen and (min-width: 768px) {
+  .footer .icon-box {
+    width: 40px;
+    height: 40px;
+  }
 }
 @media screen and (min-width: 768px) {
   .footer .icon-box {
@@ -361,22 +399,6 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer .pc-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .footer .pc-nav .social-medias .icon-box {
-    margin-right: 32px;
-  }
-  .footer .pc-nav .social-medias .icon-box:last-child {
-    margin: 0;
   }
 }
 .footer .declaration {
