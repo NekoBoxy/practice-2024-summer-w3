@@ -6,4 +6,5 @@
       "savePath": "/assets/css", // 指定轉出路徑
     },
   ],
+  "liveServer.settings.port": 5505,
 }

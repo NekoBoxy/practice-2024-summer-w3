@@ -14,11 +14,12 @@
     display: flex;
     justify-content: space-between;
     margin-top: 24px;
-    padding-bottom: 20px;
+    padding-bottom: 24px;
     border-bottom: 1px solid white;
     margin-bottom: 20px;
 
     @media screen and (min-width: 768px) {
+      padding-bottom: 32px;
       margin-top: 60px;
     }
   }
@@ -43,37 +44,32 @@
   }
 
   .pc-nav {
-
+    display: flex;
+    justify-content: space-between;
+    
     @media screen and (min-width: 768px) {
-      display: flex;
       justify-content: space-between;
       
       li {
         padding-right: 48px;
       }
-
-      .social-medias .icon-box {
+  
+      .social-medias-inner .icon-box {
+        width: 40px;
+        height: 40px;
         margin-right: 16px;
-
+  
         &:last-child {
           // 大版第三個不右推
           margin: 0;
         }
       }
     }
-
+  
     
     @media screen and (min-width: 992px) {
-      display: flex;
-      justify-content: space-between;
-
       .social-medias .icon-box {
         margin-right: 32px;
-
-        // &:last-child {
-        //   // 大版第三個不右推
-        //   margin: 0;
-        // }
       }
     }
   }
@@ -84,21 +80,27 @@
 
   .icon-group>.material-icons-outlined {
     vertical-align: text-bottom;
-    margin-right: 5px;
+    margin-right: 8px;
 
     @media screen and (min-width: 768px) {
       margin-right: 22px;
     }
   }
 
-  .icon-box {
+  // 外面的
+  .social-medias-outer {
+    display: flex;
+  }
+
+  .social-medias-outer .icon-box {
     width: 24px;
     height: 24px;
-    padding-left: 16px;
+    padding-left: 8px;
 
     @media screen and (min-width: 768px) {
       width: 40px;
       height: 40px;
+      padding-left: 16px;
     }
     
     @media screen and (min-width: 768px) {
@@ -131,9 +133,6 @@
   //   //   'opsz' 24;
   // }
 
-  .social-medias {
-    display: flex;
-  }
 
   .d-pc-none {
     @media screen and (min-width: 768px) {
@@ -155,6 +154,10 @@
 
   .declaration p {
     padding-bottom: 8px;
+  }
+
+  .declaration p:last-child {
+    padding-bottom: 24px;
   }
 
   @media screen and (min-width: 768px) {
