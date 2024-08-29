@@ -286,6 +286,9 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid white;
@@ -320,16 +323,24 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.footer .pc-nav li {
+  display: inline-block;
+}
+.footer .pc-nav ul, .footer .pc-nav .social-medias-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 @media screen and (min-width: 768px) {
-  .footer .pc-nav {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
   .footer .pc-nav li {
     padding-right: 48px;
   }
