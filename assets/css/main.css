@@ -286,13 +286,17 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 24px;
-  padding-bottom: 20px;
+  padding-bottom: 24px;
   border-bottom: 1px solid white;
   margin-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
   .footer .top-group {
+    padding-bottom: 32px;
     margin-top: 60px;
   }
 }
@@ -315,25 +319,83 @@ button {
     padding-block: 12px;
   }
 }
+.footer .pc-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer .pc-nav ul, .footer .pc-nav .social-medias-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer .pc-nav ul {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer .pc-nav li {
+  display: inline-block;
+}
+.footer .pc-nav .social-medias-inner {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+@media screen and (min-width: 768px) {
+  .footer .pc-nav li {
+    padding-right: 48px;
+  }
+  .footer .pc-nav .social-medias-inner .icon-box {
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+  }
+  .footer .pc-nav .social-medias-inner .icon-box:last-child {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  .footer .pc-nav .social-medias .icon-box {
+    margin-right: 32px;
+  }
+}
 .footer .icon-group {
   text-align: start;
 }
 .footer .icon-group > .material-icons-outlined {
   vertical-align: text-bottom;
-  margin-right: 5px;
+  margin-right: 8px;
 }
 @media screen and (min-width: 768px) {
   .footer .icon-group > .material-icons-outlined {
     margin-right: 22px;
   }
 }
-.footer .icon-box {
+.footer .social-medias-outer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer .social-medias-outer .icon-box {
   width: 24px;
   height: 24px;
-  padding-left: 16px;
+  padding-left: 8px;
 }
 @media screen and (min-width: 768px) {
-  .footer .icon-box {
+  .footer .social-medias-outer .icon-box {
+    width: 40px;
+    height: 40px;
+    padding-left: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer .social-medias-outer .icon-box {
     width: 48px;
     height: 48px;
   }
@@ -342,11 +404,6 @@ button {
   .footer .icon-group span {
     font-size: 36px;
   }
-}
-.footer .social-medias {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 @media screen and (min-width: 768px) {
   .footer .d-pc-none {
@@ -363,27 +420,14 @@ button {
     display: flex;
   }
 }
-@media screen and (min-width: 768px) {
-  .footer .pc-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .footer .pc-nav .social-medias .icon-box {
-    margin-right: 32px;
-  }
-  .footer .pc-nav .social-medias .icon-box:last-child {
-    margin: 0;
-  }
-}
 .footer .declaration {
   text-align: start;
 }
 .footer .declaration p {
   padding-bottom: 8px;
+}
+.footer .declaration p:last-child {
+  padding-bottom: 24px;
 }
 @media screen and (min-width: 768px) {
   .footer .declaration {
