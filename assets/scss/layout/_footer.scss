@@ -15,114 +15,53 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 24px;
-    padding-bottom: 24px;
     border-bottom: 1px solid white;
-    margin-bottom: 20px;
+    padding-bottom: 24px;
 
     @media screen and (min-width: 768px) {
-      padding-bottom: 32px;
       margin-top: 60px;
     }
   }
 
   .content {
+
     @media screen and (min-width: 768px) {
       width: 100%;
+      margin-bottom: 32px;
+      padding-bottom: 0;
     }
   }
 
-  ul {
+  .pad-nav {
     display: none;
 
     @media screen and (min-width: 768px) {
       display: flex;
-      margin-bottom: 36px;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      padding-bottom: 24px;
 
-      li {
-        padding-block: 12px;
+      ul,
+      .social-medias-inner {
+        display: flex;
       }
-    }
-  }
 
-  .pc-nav {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-
-    ul, .social-medias-inner {
-      display: flex;
-    }
-
-    ul {
-      align-items: center;
-    }
-
-    li {
-      display: inline-block;
-    }
-
-    .social-medias-inner {
-      // 區塊高度過高調不小，改用 start
-      align-items: flex-start;
-    }
-
-    @media screen and (min-width: 768px) {
+      ul {
+        align-items: center;
+      }
 
       li {
+        display: inline-block;
         padding-right: 48px;
       }
 
       .social-medias-inner .icon-box {
         width: 40px;
         height: 40px;
-        margin-right: 16px;
-
-        &:last-child {
-          // 大版第三個不右推
-          margin: 0;
-        }
-      }
-    }
-
-
-    @media screen and (min-width: 992px) {
-      .social-medias .icon-box {
-        margin-right: 32px;
+        padding-left: 16px;
       }
     }
   }
-
-  // ori
-  // .pc-nav {
-  //   display: flex;
-  //   justify-content: space-between;
-
-  //   @media screen and (min-width: 768px) {
-  //     justify-content: space-between;
-
-  //     li {
-  //       padding-right: 48px;
-  //     }
-
-  //     .social-medias-inner .icon-box {
-  //       width: 40px;
-  //       height: 40px;
-  //       margin-right: 16px;
-
-  //       &:last-child {
-  //         // 大版第三個不右推
-  //         margin: 0;
-  //       }
-  //     }
-  //   }
-
-
-  //   @media screen and (min-width: 992px) {
-  //     .social-medias .icon-box {
-  //       margin-right: 32px;
-  //     }
-  //   }
-  // }
 
   .icon-group {
     text-align: start;
@@ -153,7 +92,7 @@
       padding-left: 16px;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1296px) {
       width: 48px;
       height: 48px;
     }
@@ -200,27 +139,36 @@
 
   .declaration {
     text-align: start;
-  }
+    padding-top: 16px;
 
-  .declaration p {
-    padding-bottom: 8px;
-  }
+    p {
+      padding-bottom: 8px;
+    }
 
-  .declaration p:last-child {
-    padding-bottom: 24px;
-  }
+    p:last-child {
+      padding-bottom: 24px;
+    }
 
-  @media screen and (min-width: 768px) {
-    .declaration {
+    @media screen and (min-width: 768px) {
       display: flex;
       justify-content: space-between;
-      margin-block: 32px;
+      align-items: center;
+      padding-block: 32px;
+
+      p {
+        padding-bottom: 0;
+      }
 
       .pc-box {
         display: flex;
+        align-items: center;
 
         p:nth-child(1) {
           margin-right: 48px;
+        }
+
+        p:last-child {
+          padding-bottom: 0;
         }
       }
     }
