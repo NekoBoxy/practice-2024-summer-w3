@@ -107,7 +107,7 @@ button {
   margin: 0 auto;
   padding: 0 13px;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1920px) {
   .container {
     max-width: 1320px;
   }
@@ -252,7 +252,7 @@ button {
     width: auto;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1920px) {
   .header .row {
     padding-left: 0;
     padding-right: 0;
@@ -274,7 +274,7 @@ button {
 .footer .col {
   padding: 0 16px;
 }
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 768px) {
   .footer .col {
     padding: 0 36px;
   }
